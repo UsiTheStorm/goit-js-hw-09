@@ -10,7 +10,7 @@ export const galleryItems = [
         description: 'Amethyst Crystal',
     },
     {
-        preview: 'https://cdn.pixabay.com/photo/2018/08/18/16/38/night-view-3615087__340.jpg',
+        preview: 'https://cdn.pixabay.com/photo/2018/08/18/16/38/night-view-3615087_1280.jpg',
         original: 'https://cdn.pixabay.com/photo/2018/08/18/16/38/night-view-3615087_1280.jpg',
         description: 'Alley image',
     },
