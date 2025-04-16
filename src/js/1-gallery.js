@@ -7,21 +7,21 @@ const lightbox = GLightbox({ selector: '.glightbox' });
 
 let gallery = document.querySelector('.gallery');
 
+function createGalleryItem({ preview, original, description }) {
+    return /* html */ `<li class="gallery__item boxy">
+    <a class="gallery__link" href="${original}">
+        <img
+            class="gallery__image"
+            src="${original}" 
+            data-source="${original}"
+            alt="${description}"
+        />
+    </a>
+    </li>`;
+}
+
 function createMarkup() {
-    let markup = '';
-    galleryItems.forEach(({ preview, original, description }) => {
-        const content = /* html */ `<li class="gallery__item">
-      <a class="gallery__link" href="${original}">
-      <img
-        class="gallery__image"
-        src="${preview}"
-        data-source="${original}"
-        alt="${description}"
-      />
-      </a>
-      </li>`;
-        markup += content;
-    });
+    const markup = galleryItems.map(createGalleryItem).join('');
     gallery.insertAdjacentHTML('beforeend', markup);
 }
 createMarkup();
