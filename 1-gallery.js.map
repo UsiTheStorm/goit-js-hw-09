@@ -1,1 +1,1 @@
-{"version":3,"file":"1-gallery.js","sources":[],"sourcesContent":[],"names":[],"mappings":""}
+{"version":3,"file":"1-gallery.js","sources":["../src/js/1-gallery.js"],"sourcesContent":["import GLightbox from 'glightbox';\nimport 'glightbox/dist/css/glightbox.css';\n\nconst lightbox = GLightbox({ selector: '.glightbox' });\n"],"names":["GLightbox"],"mappings":"wIAGiBA,EAAU,CAAE,SAAU,YAAc,CAAA"}
