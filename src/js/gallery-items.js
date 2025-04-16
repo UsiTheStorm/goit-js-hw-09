@@ -1,4 +1,3 @@
-/* eslint-disable import/prefer-default-export */
 export const galleryItems = [
     {
         preview: 'https://cdn.pixabay.com/photo/2023/10/06/08/16/lavender-8297714__340.jpg',
