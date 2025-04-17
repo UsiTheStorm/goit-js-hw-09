@@ -44,4 +44,6 @@ export const galleryItems = [
         original: 'https://cdn.pixabay.com/photo/2022/07/24/13/14/lavender-7341619_1280.jpg',
         description: 'Lavender flowers',
     },
+
+    // Add more gallery items as needed
 ];
