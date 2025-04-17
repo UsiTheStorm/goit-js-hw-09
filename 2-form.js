@@ -1,0 +1,2 @@
+import"./assets/styles-yez5diiv.js";let m=document.querySelector(".feedback-form"),a=document.querySelector("#email"),t=document.querySelector("#message"),e={email:"",message:""};e&&(JSON.parse(localStorage.getItem("feedback-form-state")),a.value=e.email,t.value=e.message);m.addEventListener("submit",l=>{l.preventDefault(),e.email=a.value,e.message=t.value,localStorage.setItem("feedback-form-state",JSON.stringify(e)),console.log(e),localStorage.removeItem("feedback-form-state")});
+//# sourceMappingURL=2-form.js.map
