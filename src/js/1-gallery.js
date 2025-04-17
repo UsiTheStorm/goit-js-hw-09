@@ -3,13 +3,11 @@ import 'glightbox/dist/css/glightbox.css';
 
 import { galleryItems } from './gallery-items';
 
-const lightbox = GLightbox({ selector: '.glightbox' });
-
 let gallery = document.querySelector('.gallery');
 
 function createGalleryItem({ preview, original, description }) {
-    return /* html */ `<li class="gallery__item boxy">
-    <a class="gallery__link" href="${original}">
+    return /* html */ `<li class="gallery__item">
+    <a class="gallery__link glightbox" href="${original}">
         <img
             class="gallery__image"
             src="${original}" 
@@ -25,3 +23,9 @@ function createMarkup() {
     gallery.insertAdjacentHTML('beforeend', markup);
 }
 createMarkup();
+
+const lightbox = GLightbox({
+    selector: '.glightbox',
+    loop: true,
+    openEffect: 'zoom',
+});
