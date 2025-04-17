@@ -39,6 +39,7 @@ try {
 }
 
 // Initialize GLightbox with configuration options
+// eslint-disable-next-line no-unused-vars
 const lightbox = GLightbox({
     // CSS selector for the gallery links
     selector: '.glightbox',
