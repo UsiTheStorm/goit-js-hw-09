@@ -36,13 +36,18 @@
         <form class="feedback-form" autocomplete="off">
           <div class="form-field">
             <label for="email" class="form-label"> Email </label>
-            <input id="email" type="email" name="email" class="form-input" autofocus />
+            <input id="email" type="email" name="email" class="form-input" required autofocus />
           </div>
           <div class="form-field">
             <label for="message" class="form-label"> Message </label>
-            <textarea id="message" name="message" rows="8" class="form-input"></textarea>
+            <textarea id="message" name="message" rows="8" class="form-input" required></textarea>
           </div>
-          <button class="form-submit" type="submit" aria-label="Submit feedback form">
+          <button
+            class="form-submit"
+            type="submit"
+            aria-label="Submit feedback form"
+            action="/submit"
+          >
             Submit
           </button>
         </form>
