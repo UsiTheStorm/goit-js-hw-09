@@ -22,7 +22,6 @@
 
   background-color: rgb(241, 241, 255, 0.5);
   border-radius: 8px;
-  /* box-shadow: 0 2px 4px rgba(42, 42, 42, 0.1); */
 }
 
 .form-field {
@@ -70,4 +69,14 @@ textarea.form-input {
 
 .form-submit:hover {
   background-color: var(--hover-accent-color);
+}
+
+@media (max-width: 600px) {
+  .form-submit {
+    align-self: center;
+    width: 100%;
+    padding: 8px;
+    font-size: 20px;
+    margin-top: 16px;
+  }
 }
