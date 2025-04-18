@@ -3,6 +3,11 @@
   --hover-accent-color: #9294ff;
 }
 
+.main-title {
+  text-align: center;
+  color: var(--accent-color);
+}
+
 .feedback-form-container {
   display: grid;
   padding-top: 50px;
